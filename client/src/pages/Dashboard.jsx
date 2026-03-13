@@ -87,10 +87,11 @@ const Dashboard = () => {
             <h4 className="font-bold text-lg mb-1">📚 Browse Courses</h4>
             <p className="text-green-200 text-sm">Explore available courses</p>
           </div>
-          <div className="bg-orange-500 text-white p-6 rounded-2xl cursor-pointer hover:bg-orange-600 transition">
+         <div onClick={() => navigate('/ai-chat')}
+            className="bg-orange-500 text-white p-6 rounded-2xl cursor-pointer hover:bg-orange-600 transition">
             <h4 className="font-bold text-lg mb-1">💬 AI Tutor Chat</h4>
             <p className="text-orange-200 text-sm">Get help from your AI tutor</p>
-          </div>
+        </div>
         </div>
       </div>
     </div>

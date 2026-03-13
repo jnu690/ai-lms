@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import AIQuiz from './pages/AIQuiz';
+import AIChat from './pages/AIChat';
 
 const ProtectedRoute = ({ children }) => {
   const { user } = useAuth();
@@ -27,6 +28,11 @@ const App = () => {
           <Route path="/ai-quiz" element={
             <ProtectedRoute>
               <AIQuiz />
+            </ProtectedRoute>
+          } />
+          <Route path="/ai-chat" element={
+            <ProtectedRoute>
+              <AIChat />
             </ProtectedRoute>
           } />
           <Route path="/" element={<Navigate to="/login" />} />
